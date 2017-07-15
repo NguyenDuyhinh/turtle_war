@@ -155,12 +155,12 @@ class RoboCtrl
                           cv::circle( mask, mc, 4,cv::Scalar(100), 2, 4);
                           frontspeed = 0.5; 
                           if(x > 220 && x < 420){turnspeed = 0.0;}
-                          else if(x > 420){turnspeed = -(x - 420)*0.01;}
-                          else if(x < 220){turnspeed = -(x - 420)*0.01;}
+                          else if(x > 420){turnspeed = -(x - 420)*0.02;}
+                          else if(x < 220){turnspeed = -(x - 420)*0.02;}
                        }
                        if(x < 0){
                           frontspeed = 0.0;
-                          turnspeed = 2.0;
+                          turnspeed = 3.0;
                        }
 
                        // Update GUI Window
